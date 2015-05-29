@@ -9,6 +9,7 @@ Desktop.ini
 node_modules
 bower_components
 dist
+bower
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
