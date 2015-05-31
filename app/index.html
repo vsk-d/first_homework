@@ -3,14 +3,15 @@
 <html lang="ru-Ru">
 <head>
 	<meta charset="UTF-8">
-	<title>dz1</title>
+	<title>first_lesson</title>
 	<!-- SEO -->
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
+	<meta name="description" content="first homework at loftschool">
+	<meta name="keywords" content="homework, loftschool, домашнее задание, выпускной проект">
+	<meta name="author" content="Kurochkin Viktor Sergeevich">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<!-- JS -->
 	<script src="js/modernizr.js"></script>
 </head>
@@ -19,138 +20,153 @@
 <!--[if lt IE 8]>
 	<p class="browsehappy">Ваш браущер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com">обновите</a> его.</p>
 <![endif]-->
-
+<!--Главный блок-->
 <div class="wrapper clearfix">
-	<div class="main-content">
-		<!--Шапка-->
-			<header class="pageheader">
-				<div class="container-big">
-					 <div class="page_header_logo"><a class="logo" href="/"></a></div>
-					
-				<div class="page_header_socials"></div>
-					<ul class="socials">
-						<li class="social_item">
-							<a href="http://vk.com/loftschoolru" target="_blank" class="social-link-vk"></a>
-						</li>
-						<li class="social_item">
-							<a href="https://twitter.com/loft_blog" target="_blank" class="social-link-tw">Twitter</a>
-						</li>
-						<li class="social_item">
-							<a href="https://ru-ru.facebook.com/loftblog" target="_blank" class="social-link-fb">Facebook</a>
-						</li>
-						<li class="social_item">
-							<a href="https://github.com/kovaldin" target="_blank" class="social-link-gt">Github</a>
-						</li>
-					</ul>
-
-
+<!--Шапка-->
+			<header>
+				<div class="page_header_logo">
+						<a href="index.html"><img src="img/logo.png" alt="Сайт-портфолио Курочкина Виктора"></a>
 				</div>
-
-
+					<div class="page_header_socials">
+						<a href="https://vk.com/id22662543" target="_blank">
+							<i class="sprite icon_vk"></i></a>
+						<a href="https://twitter.com/loft_blog" target="_blank">
+							<i class="sprite icon_twitter"></i></a>
+						<a href="https://ru-ru.facebook.com/loftblog" target="_blank"></a>
+							<i class="sprite icon_Facebook"></i>
+						<a href="https://github.com/vsk-d" target="_blank">
+							<i class="sprite icon_github"></i>
+						</a>
+					</div>
 			</header>
+<!-- шапка -->
+
+
 <!--меню Обо мне-->
-			<aside class="about-me">
-				<div class="about-me_head">
-					<span class="about_header">Обо мне</span>
-					<ul class="about">
-						<li class="my_job">
-							<a href="" target="_blank" class="my_job_link">Мои работы</a>	
+	<aside class="left-col">
+				<nav class="about">
+					<ul class="about-list">
+						<li class="about-item  active">
+							<span class="li-wrap">
+								<a class="about-item-link" href="index.html">Обо мне</a>
+							</span>
 						</li>
-						<li class="my_contact">
-							<a href="" target="_blank" class="my_contact_link">Связаться со мной</a>
+						<li class="about-item">
+							<span class="li-wrap">
+								<a class="about-item-link" href="portpholio.html">Мои работы</a>
+							</span>
 						</li>
-
-					</ul>
-
-				</div>
-				<div class="contact">
-					<span class="contact_header">Контакты</span>
-					<ul class="about">
-						<li class="mail">
-							<a href="mailto:darkimail@rambler.ru" class="my_mail">darkimail@rambler.ru</a>	
-						</li>
-						<li class="telephone">
-							<a href="tel:+79161503993" class="my_tel">+79161503993</a>
-						</li>
-						<li class="scype">
-							<a href="scype:dark_tf8" class="my_tel">dark_tf8</a>
+						<li class="about-item">
+							<span class="li-wrap">
+								<a class="about-item-link" href="contact.html">Связаться со мной</a>
+							</span>
 						</li>
 					</ul>
-				</div>
-
+				</nav>
+				<address class="contacts">
+					<div class="contacts-title br-top">Контакты</div>
+					<div class="email">
+						<a class="contact-item" href="mailto:darkinmail@rambler.ru.ru"><i class="sprite-contacts sprite_mail"></i>darkinmail@rambler.ru</a>
+					</div>
+					<div class="tel">
+						<a class="contact-item" href="tel:+79161503993"><i class="sprite-contacts sprite_phone"></i>+79161503993</a>
+					</div>
+					<div class="skype br-bottom">
+						<a class="contact-item" href="skype:dark_tf8"><i class="sprite-contacts sprite_scype"></i>dark_tf8</a>
+					</div>
+				</address>
 			</aside>
 <!--контент-->
-			<div class="content">
+		<div class="content">
+			<!-- первый блок -->
 				<div class="main_info">
 					<span class="main_info_header">Основная информация</span>
-					<dl class="my_info">
-						<dt class="my_name">Меня зовут:</dt>	
-							<dd class="FIO">Курочкин Виктор Сергеевич</dd>
-						<dt class="my_age">Мой возраст:</dt>	
-							<dd class="age">32 года</dd>
-						<dt class="my_town">Мой Город:</dt>	
-							<dd class="town">Москва, Россия</dd>
-						<dt class="my_prof">Моя специализация:</dt>	
-							<dd class="prof">FRONTEND разработчик</dd>
-						<dt class="my_scill">Ключевые навыки:</dt>	
-							<dd class="scill">
-					<ul class="scills">
-						<li class="skill-html">
-							<img src="img/bt_html.png" alt="html" class="html_img">	
+						<div class="avatar-box">
+							<img class="avatar" src="img/avatar.jpg" alt="Курочкин В.С.">
+						</div>
+					
+						
+						<div class="my_info_sp">
+								<span class="info_sub">Меня зовут:</span>Курочкин Виктор Сергеевич
+						</div>
+						<div class="my_info_sp">
+								<span class="info_sub">Мой возраст:</span>32 года
+						</div>
+						<div class="my_info_sp">
+								<span class="info_sub">Мой Город:</span>Москва, Россия
+						</div>
+						<div class="my_info_sp">
+								<span class="info_sub">Моя специализация:</span>FRONTEND разработчик
+						</div>
+						<div class="my_info_sp">
+								<div class="info_sub">Ключевые навыки:</div>
+					<ul class="skills">
+						<li class="skill-item">html
 						</li>
-						<li class="skill-css">
-							<img src="img/bt_css.png" alt="css" class="css_img">
+						<li class="skill-item">css					
 						</li>
-						<li class="skill-js">
-							<img src="img/bt_js.png" alt="javascript" class="js_img">
+						<li class="skill-item">javascript
 						</li>
-						<li class="skill-gulp">
-							<img src="img/bt_gulp.png" alt="gulp" class="gulp_img">
+						<li class="skill-item">gulp
 						</li>
-						<li class="skill-git">
-							<img src="img/bt_git.png" alt="git" class="git_img">
+						<li class="skill-item">git
 						</li>
 					</ul>	
 
-						</dd>
-					</dl>
+						</div>
+					
 				</div>
+			<!-- второй блок -->
 				<div class="work_exp">
 					<span class="work_exp_header">Опыт работы</span>
-						<dl class=work_spisok>
-							<dt class="first_work">"ИП Боровицкий" - Продавец дисков</dt>	
-							<dd class="first_work_time">Сентябрь 2005 - Август 2008</dd>
-							<dt class="last_work">"ООО Системы безопастности" - Системный администратор</dt>	
-							<dd class="last_work_time">Июнь 2008 - Июль 2010</dd>
-
-						</dl>
-
+					<div class="exp-cont">
+						<div class="exp-dt">
+						<dl class="work_spisok">
+							<dt class="work_exp_place">ООО "Русклимат" - Дизайнер-верстальщик</dt>	
+							<dd class="work_time">Октябрь 2005 - по настоящее время</dd>
+							</dl>
+						</div>	
+						<div class="exp-dt">
+							<dl class="work_spisok">
+							<dt class="work_exp_place">"Учебный центр Специалист" - Дизайнер-верстальщик</dt>	
+							<dd class="work_time">Декабрь 2014 - Октябрь 2015</dd>
+							</dl>
+						</div>
+					</div>
 				</div>
+			<!-- третий блок -->
 				<div class="education">
 					<span class="education_header">Образование</span>
-						<dl class=education_spisok>
+					<div class="educ-cont">
+						
+						<div class="school_dt">
+							<dl class="education_spisok">
 							<dt class="hi_school">Высшее. УлГТУ</dt>	
-							<dd class="teach_time_hi">Сентябрь 2002 - Июнь 2008</dd>
-							<dt class="curs_loft">Курс Loftschool.ru</dt>	
-							<dd class="loft_time_curs">Май 2015 - по настоящее время</dd>
-
-						</dl>
+							<dd class="teach_time">Сентябрь 2002 - Июнь 2008</dd>
+							</dl>
+						</div>	
+						<div class="time_dt">	
+							<dl class="education_spisok">
+							<dt class="hi_school">Курс Loftschool.ru</dt>	
+							<dd class="teach_time">Май 2015 - по настоящее время</dd>
+							</dl>
+						</div>			
+						
+					</div>
 				</div>
-
-
 			</div>
-
-	</div>
-
 </div>
 
-
 <!--Подвал-->
+<footer class="footer">
+	
+				<div class="admin">
+					<a href="#" class="admin-enter"></a>
+				</div>
+				<div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+				</div>
 
-	<div class="page-footer">
-		<img src="icon_lock" width="" height="" alt="замок">
-		<span class="footer_copyraigths">&#169 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</span>
-	</div>
+</footer>
 	
 </body>
 </html>
