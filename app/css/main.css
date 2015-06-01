@@ -30,12 +30,11 @@ html, body {
 
 /*Шапка*/
 header {
-background: #eff3f7 no-repeat;
 width: 100%;
 height: 119px;
+background: #eff3f7 url(../img/line.png) bottom no-repeat;
 margin-bottom: 39px;
 }
-
 
 /*Шапка лого*/
 .page_header_logo {
