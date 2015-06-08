@@ -78,7 +78,7 @@
 }
 .skill-list .skill-item{
 	display: inline-block;
-	font-family: 'fira_sansbook';
+	font-family: 'proxima_nova_condensedSBd';
 	 font-size: 12px;
   background: #3ba8c0; /* Old browsers */
 	background: -moz-linear-gradient(top,  #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%); /* FF3.6+ */

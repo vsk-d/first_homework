@@ -101,8 +101,8 @@
 .works-item .zoom-link {visibility: hidden;}
 .works-item .work-link {
 	color: #3ba8c0;
-	font-family: 'fira_sanslight'
-	font-size: 12px;
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
 	text-decoration: none;
 }
 .works-item .works-obzor {
@@ -150,3 +150,15 @@
 	-ms-transform: scale(1.2);
 }
 
+/*стили модального окна*/
+
+.popup-img {
+	display: none;
+position: relative;
+top: 314px;
+width:362px;
+height: 493px;
+margin: 0 auto;
+background: #eff3f7;
+border-radius: 4px;
+}

@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="css/contact-me.css">
 	<!-- JS -->
 	<script src="js/modernizr.js"></script>
 	<!-- favicon -->
@@ -64,11 +66,11 @@
 					<li class="navigation-item">
 						<a class="navigation-link" href="/index.html">Обо мне</a>
 					</li>
-					<li class="navigation-item current">
-						<a class="navigation-link" href="/">Мои работы</a>
-					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="/contact-me.html">Связаться со мной</a>
+						<a class="navigation-link" href="/portfolio.html">Мои работы</a>
+					</li>
+					<li class="navigation-item current">
+						<a class="navigation-link" href="/">Связаться со мной</a>
 					</li>
 				</ul>
 			<!--Навигация - end-->
@@ -95,67 +97,99 @@
 		</aside>
 		<!--Изменяемый контент - справа-->
 		  <div class="variable-content">
-				<!--ПОРТФОЛИО-->
+				<!--Основная информация-->
 				<section class="aboutbox">
- 					<div class="aboutbox-header">Мои работы</div> 
+ 					<h2 class="aboutbox-header">Основная информация</h2> 
 					<div class="aboutbox-body clearfix"> 
-						<div class="works-wrapper"> 
-							<!-- Список уже добавленных работ -->
-						<ul class="works-list">
-							<li class="works-item">
-									<div class="hover-img">
-										<img src="img/project_temp.jpg" alt="weresk.nethouse.ru" class="works-img">
-											<div class="zoom">
-											<a href="http://weresk.nethouse.ru" class="zoom-link" target="_blank">weresk.nethouse.ru</a>
-											</div>
-									</div>
-									<a href="http://weresk.nethouse.ru" class="work-link" target="_blank">weresk.nethouse.ru</a>
-									<div class="works-obzor">Информация о проекте, ну напиши пару строк, не ленись...</div>
-							</li>
-							<li class="works-item">
-									<div class="hover-img">
-										<img src="img/project_temp.jpg" alt="weresk.nethouse.ru" class="works-img">
-											<div class="zoom">
-											<a href="http://weresk.nethouse.ru" class="zoom-link" target="_blank">weresk.nethouse.ru</a>
-											</div>
-									</div>
-									<a href="http://weresk.nethouse.ru" class="work-link" target="_blank">weresk.nethouse.ru</a>
-									<div class="works-obzor">Информация о проекте, ну напиши пару строк, не ленись...</div>
-							</li>
-							<li class="works-item">
-									<div class="hover-img">
-										<img src="img/project_temp.jpg" alt="weresk.nethouse.ru" class="works-img">
-											<div class="zoom">
-											<a href="http://weresk.nethouse.ru" class="zoom-link" target="_blank">weresk.nethouse.ru</a>
-											</div>
-									</div>
-									<a href="http://weresk.nethouse.ru" class="work-link" target="_blank">weresk.nethouse.ru</a>
-									<div class="works-obzor">Информация о проекте, ну напиши пару строк, не ленись...</div>
-							</li>
-							<li class="works-item">
-									<div class="hover-img">
-										<img src="img/project_temp.jpg" alt="weresk.nethouse.ru" class="works-img">
-											<div class="zoom">
-											<a href="http://weresk.nethouse.ru" class="zoom-link" target="_blank">weresk.nethouse.ru</a>
-											</div>
-									</div>
-									<a href="http://weresk.nethouse.ru" class="work-link" target="_blank">weresk.nethouse.ru</a>
-									<div class="works-obzor">Информация о проекте, ну напиши пару строк, не ленись...</div>
-							</li>
+						<div class="image-wrap">
+							<div class="avatar-box">
+							<img src="img/avatar.jpg" alt="Курочкин В.с." class="avatar">
+							</div>
+						</div>
+							<div class="worksheet-wrap">
+								<ul class="worksheet-list">
+									<li class="worksheet-item clearfix">
+										<div class="worksheet-what">Меня зовут:</div>
+										<div class="worksheet-info">Курочкин Виктор Сергеевич</div>
+									</li>
+									<li class="worksheet-item clearfix">
+										<div class="worksheet-what">Мой возраст:</div>
+										<div class="worksheet-info">32 года</div>
+									</li>
+									<li class="worksheet-item clearfix">
+										<div class="worksheet-what">Мой город:</div>
+										<div class="worksheet-info">Москва, Россия</div>
+									</li>
+									<li class="worksheet-item clearfix">
+										<div class="worksheet-what">Моя специализация:</div>
+										<div class="worksheet-info">FRONTEND разработчик</div>
+									</li>
+									<li class="worksheet-item clearfix">
+										<div class="worksheet-what">Ключевые навыки:</div>
+										<div class="worksheet-info scills">
+											<ul class="skill-list">
+												<li class="skill-item">html</li>
+												<li class="skill-item">css</li>
+												<li class="skill-item">javascript</li>
+												<li class="skill-item">gulp</li>
+												<li class="skill-item">git</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
 
-
-							<!-- загружаем новый проект -->
-							<li class="works-item add-new-work">
-									<a href="#" class="add-new-link" id="add-new-work">
-									<div class="add-new-text">Добавь проект</div>
-									</a>
+					</div>
+				<!--Основная информация - end-->
+				</section>
+					<!--Опыт работы-->
+				<section class="aboutbox">
+					<h2 class="aboutbox-header">Опыт работы</h2>
+					<div class="aboutbox-body">
+						<ul class="aboutbox-list">
+							<li class="aboutbox-item icon-work">
+								<div class="where">"ООО Русклимат" - дизайнер-верстальщик</div>
+								<div class="period">Октябрь 2014 - по настоящее время</div>
+							</li>
+							<li class="aboutbox-item icon-work">
+								<div class="where">"УЦ Специалист" - дизайнер-верстальщик</div>
+								<div class="period">Декабрь 2013 - Октябрь 2014</div>
+							</li>
+							<li class="aboutbox-item icon-work">
+								<div class="where">"TWIGA - подразделение OGGI" - дизайнер-верстальщик</div>
+								<div class="period">Апрель 2013 - ноябрь 2013</div>
+							</li>
+							<li class="aboutbox-item icon-work">
+								<div class="where">"издательство РООССА" - дизайнер-верстальщик</div>
+								<div class="period">Май 2011 - март 2013</div>
 							</li>
 						</ul>
-						</div>
 					</div>
-				<!--ПОРТФОЛИО - end-->
+					<!--Опыт работы - end-->
 				</section>
-					
+				<section class="aboutbox">
+
+								<!--Образование-->
+			
+					<h2 class="aboutbox-header">Образование</h2>
+					<div class="aboutbox-body">
+						<ul class="aboutbox-list">
+							<li class="aboutbox-item icon-vuz">
+								<div class="where">Законченное высшее. УлГТУ. Специалист книжного дела (редактор)</div>
+								<div class="period">Сентябрь 2002 - Июнь 2008</div>
+							</li>
+							<li class="aboutbox-item icon-course">
+								<div class="where">Курсы Loftschool</div>
+								<div class="period">Май 2015 - по настоящее время</div>
+							</li>
+							<li class="aboutbox-item icon-course">
+								<div class="where">Специальные курсы английского языка по Оксфордской программе</div>
+								<div class="period">Сентябрь 2005 - Июнь 2006</div>
+							</li>
+						</ul>
+					</div>
+				<!--Образование - end-->
+				</section>
 
 		<!--Изменяемый контент - справа - end-->
 
@@ -164,9 +198,6 @@
 	</div>
 </div>
 </div>
-
-
-
 
 <!--Подвал-->
 
@@ -179,33 +210,6 @@
         </div>
     </footer>
 <!--Подвал-end-->
-
-<!-- Модальное окно -->
-<form action="loader.php">
-<div class="popup-img" id= "img-loader">
-	<div class="popup-inner">
-		<div class="popup-titul">Добавление проекта</div>
-		<label class="form-input-txt">
-			<span class="form-input-header">Название проекта</span>
-			<input class="form-input-enter" placeholder="Введите название"/>
-		</label>
-		<label class="form-input-txt">
-			<span class="form-input-header">Картинка проекта</span>
-			<input class="form-input-enter" placeholder="Загрузите изображение"/>
-			<button class="form-input-enter button-load-img"><h2 class="hide-txt">Загрузить</h2></button>
-		</label>
-		<label class="form-input-txt">
-			<span class="form-input-header">URL проекта</span>
-			<input class="form-input-enter" placeholder="Добавьте ссылку"/>
-		</label>
-		<label class="form-input-txt">
-			<span class="form-input-header">Описание</span>
-			<input class="form-input-enter" placeholder="Пара слов о Вашем проекте"/>
-		</label>
-		<input type="submit">
-	</div>
-</div>
-</form>
 
 <!--Главный блок - end-->
 
