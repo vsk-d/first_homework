@@ -1,47 +1,30 @@
-/* Общие стили для всех секций */
-.aboutbox{
-	background: #eff3f7;
-	border-radius: 4px;
-	margin-bottom: 26px;
-}
-.aboutbox .aboutbox-header{
-	font-family: 'fira_sansbook';
-	font-size: 27px;
-	font-weight: normal;
-	color: #3ba8c0;
-	border-bottom: 2px #3ba8c0 solid;
-	margin: 0 0 18px 0;
-	padding: 13px 21px;
-	display: inline-block;
-}
-.aboutbox-body{
-	padding-bottom: 40px;	
-}
-
-
 /*стили для уже загруженных проектов*/
 
 .works-wrapper {
 	margin: 0 20px;
+  margin-right: -25px;
+
+
 }
 .works-wrapper .works-list {
 	padding: 0;
-	margin: 0 0 0 -25px;
+	margin: 0 auto;
 }
 
+
 .works-list .works-item {
-	width: 183px;
+	width: 179px;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	margin-left: 25px;
+	margin-right: 31px;
 	margin-bottom: 38px;
 }
 
 .works-item .hover-img {
 	width: 100%;
-	height: 129px;
+	height: 125px;
 	border-radius: 4px;
 	margin-bottom: 3px;
 }
