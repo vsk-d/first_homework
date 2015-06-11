@@ -14,6 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="css/popup-style.css">
+	<link rel="stylesheet" type="text/css" href="css/form-style.css">		
+	<link rel="stylesheet" type="text/css" href="..bower/q-tip2/jquery.qtip.css">
 	<!-- JS -->
 	<script src="js/modernizr.js"></script>
 	<!-- favicon -->
@@ -56,7 +59,7 @@
 <!--Шапка-end-->
 
 <!--Основной контент-->
-	<div class="container clearfix">
+	<div class="container">
 		<!--Неизменяемый контент - слева-->
 		<aside div class="sidebar">
 			<!--Навигация-->
@@ -178,5 +181,56 @@
 <!--Подвал-end-->
 
 <!--Главный блок - end-->
+<!-- Модальное окно -->
+
+<div id= "img-loader">
+	<!-- Шапка модального окна -->
+	<div class="popup-inner">
+		<div class="popup-titul clearfix">
+			<span class="popup-titul-txt">Добавление проекта</span>
+			<button class="popup-titul-button"></button>
+		</div>
+		<!-- Название проекта -->
+	<div class="popup-body">
+		<form action="loader.php" enctype="multipart/form-data" method="post">
+		<div class="form-input-txt">
+			<label for="projectName" class="form-input-header">Название проекта</label>
+			<input class="form-input" type="text" name="projectName" placeholder="Введите название" id="projectName" qtip-content="Вы не ввели название"/>
+		</div>
+		<!-- Загрузка картинки -->
+		<div class="form-input-txt">
+			<div class="load-wrap" id="load">
+				<span class="form-input-header">Картинка проекта</span>
+					<label class="load-label">
+						<input id="fileupload" class="fileupload" type="file" name="files[]">
+              			<input id="fileurl" type="hidden" name="fileurl">
+					</label>
+				<input id="filename" type="text" class="form-input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
+			</div>
+		</div>
+		<!-- Ссылка проекта -->
+		<div class="form-input-txt">
+			<label for="projectURL" class="form-input-header">URL проекта</label>
+			<input class="form-input" type="text" name="projectURL" placeholder="Добавьте ссылку" id="projectName" qtip-content="Вы не добавили ссылку"/>
+		</div>
+		<!-- Описание проекта -->
+		<div class="form-input-txt">
+			<label for="projectDesk" class="form-input-header">Описание</label>
+			<textarea type="text" name="projectDesk" rows="3" class="textarea" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"></textarea>		
+		</div>
+		<!-- субмит -->
+		<div class="button-wrap">
+			<button type="submit" class="s-button">Добавить</button>
+		</div>
+		</form>
+	</div>	
+	</div>
+</div>
+
+
+<!-- uplink plugins JS -->
+<script type="text/javascript" src="..bower/q-tip2/jquery.min.js"></script>
+<script type="text/javascript" src="..bower/q-tip2/jquery.qtip.js"></script>
+
 
 </body>

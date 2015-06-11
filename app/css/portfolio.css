@@ -133,15 +133,9 @@
 	-ms-transform: scale(1.2);
 }
 
-/*стили модального окна*/
+/*прячем модалное окно - потом достаем с помощью js*/
 
-.popup-img {
-	display: none;
-position: relative;
-top: 314px;
-width:362px;
-height: 493px;
-margin: 0 auto;
-background: #eff3f7;
-border-radius: 4px;
+#img-loader {
+
+display: none;
 }
