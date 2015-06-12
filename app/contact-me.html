@@ -100,97 +100,49 @@
 		  <div class="variable-content">
 				<!--Основная информация-->
 				<section class="aboutbox">
- 					<h2 class="aboutbox-header">Основная информация</h2> 
-					<div class="aboutbox-body clearfix"> 
-						<div class="image-wrap">
-							<div class="avatar-box">
-							<img src="img/avatar.jpg" alt="Курочкин В.с." class="avatar">
-							</div>
+ 					<!-- форма обратной	 связи -->
+	<div id="form-feedback">
+		<div class="feedback-wrap">
+			<div class="feedback-head">
+					<span class="feedback-titul">У вас интересный проект? Напишите мне</span>
+			</div>
+			<div class="feedback-body">
+				<form action="feedback.php" enctype="multipart/form-data" method="post">
+				
+					<div class="input-wrapper clearfix">
+						<!-- Имя -->
+						<div class="form-input-txt pull-left">
+							<label for="userName" class="form-input-header">Имя</label>
+							<input class="form-input" type="text" name="userName" placeholder="Как к Вам обращаться" id="userName" qtip-content="Вы не ввели имя"/>
 						</div>
-							<div class="worksheet-wrap">
-								<ul class="worksheet-list">
-									<li class="worksheet-item clearfix">
-										<div class="worksheet-what">Меня зовут:</div>
-										<div class="worksheet-info">Курочкин Виктор Сергеевич</div>
-									</li>
-									<li class="worksheet-item clearfix">
-										<div class="worksheet-what">Мой возраст:</div>
-										<div class="worksheet-info">32 года</div>
-									</li>
-									<li class="worksheet-item clearfix">
-										<div class="worksheet-what">Мой город:</div>
-										<div class="worksheet-info">Москва, Россия</div>
-									</li>
-									<li class="worksheet-item clearfix">
-										<div class="worksheet-what">Моя специализация:</div>
-										<div class="worksheet-info">FRONTEND разработчик</div>
-									</li>
-									<li class="worksheet-item clearfix">
-										<div class="worksheet-what">Ключевые навыки:</div>
-										<div class="worksheet-info scills">
-											<ul class="skill-list">
-												<li class="skill-item">html</li>
-												<li class="skill-item">css</li>
-												<li class="skill-item">javascript</li>
-												<li class="skill-item">gulp</li>
-												<li class="skill-item">git</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-
+						<!-- Почта -->
+						<div class="form-input-txt pull-right">
+							<label for="usermail" class="form-input-header">Email</label>
+							<input class="form-input" type="text" name="usermail" placeholder="Куда мне писать" id="usermail" qtip-content="Вы не ввели Email"/>
+						</div>
 					</div>
+		<!-- Описание проекта -->
+		<div class="form-input-txt">
+			<label for="projectDesk" class="form-input-header">Сообщение</label>
+			<textarea type="text" name="projectDesk" rows="3" class="textarea" placeholder="Кратко, в чем суть..." qtip-content="Что вы от меня хотите?"></textarea>		
+		</div>
+			<!-- Капча -->
+			<div class="form-input-txt captcha-wrap clearfix">
+            	<label for="captcha" class="form-input-header">Введите код, указанный на картинке</label>
+					<img src="img/bg_captcha_03.png" alt="код" class="captcha pull-left"/>
+						<input type="text" name="captcha" class="form-input input-captcha pull-right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+            </div>
+				<div class="btn-wrap">
+						<button type="submit" class="s-button">Отправить</button>
+						<button type="submit" class="r-button">Очистить</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
 				<!--Основная информация - end-->
 				</section>
-					<!--Опыт работы-->
-				<section class="aboutbox">
-					<h2 class="aboutbox-header">Опыт работы</h2>
-					<div class="aboutbox-body">
-						<ul class="aboutbox-list">
-							<li class="aboutbox-item icon-work">
-								<div class="where">"ООО Русклимат" - дизайнер-верстальщик</div>
-								<div class="period">Октябрь 2014 - по настоящее время</div>
-							</li>
-							<li class="aboutbox-item icon-work">
-								<div class="where">"УЦ Специалист" - дизайнер-верстальщик</div>
-								<div class="period">Декабрь 2013 - Октябрь 2014</div>
-							</li>
-							<li class="aboutbox-item icon-work">
-								<div class="where">"TWIGA - подразделение OGGI" - дизайнер-верстальщик</div>
-								<div class="period">Апрель 2013 - ноябрь 2013</div>
-							</li>
-							<li class="aboutbox-item icon-work">
-								<div class="where">"издательство РООССА" - дизайнер-верстальщик</div>
-								<div class="period">Май 2011 - март 2013</div>
-							</li>
-						</ul>
-					</div>
-					<!--Опыт работы - end-->
-				</section>
-				<section class="aboutbox">
-
-								<!--Образование-->
-			
-					<h2 class="aboutbox-header">Образование</h2>
-					<div class="aboutbox-body">
-						<ul class="aboutbox-list">
-							<li class="aboutbox-item icon-vuz">
-								<div class="where">Законченное высшее. УлГТУ. Специалист книжного дела (редактор)</div>
-								<div class="period">Сентябрь 2002 - Июнь 2008</div>
-							</li>
-							<li class="aboutbox-item icon-course">
-								<div class="where">Курсы Loftschool</div>
-								<div class="period">Май 2015 - по настоящее время</div>
-							</li>
-							<li class="aboutbox-item icon-course">
-								<div class="where">Специальные курсы английского языка по Оксфордской программе</div>
-								<div class="period">Сентябрь 2005 - Июнь 2006</div>
-							</li>
-						</ul>
-					</div>
-				<!--Образование - end-->
-				</section>
+					
 
 		<!--Изменяемый контент - справа - end-->
 
