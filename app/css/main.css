@@ -277,3 +277,17 @@ body {
 .clearfix:after {
     clear: both; 
 }
+
+/*стили валидации*/
+
+.has-error {
+  background-color: #fad2d1!important;
+  border-color: #f97e76!important;
+  }
+
+
+ .qtip-mystyle .qtip-rounded {
+
+  background-color: green!important;
+
+ }

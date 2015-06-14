@@ -14,10 +14,13 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
-	<link rel="stylesheet" type="text/css" href="css/contact-me.css">
-	<link rel="stylesheet" type="text/css" href="css/form-style.css">
+	<link rel="stylesheet" type="text/css" href="css/popup-style.css">
+	<link rel="stylesheet" type="text/css" href="css/form-style.css">	
+			<link rel="stylesheet" type="text/css" href="css/contact-me.css">
+	<link rel="stylesheet" type="text/css" href="bower/q-tip2/jquery.qtip.css">
 	<!-- JS -->
 	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
 	<!-- favicon -->
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
@@ -107,8 +110,10 @@
 					<span class="feedback-titul">У вас интересный проект? Напишите мне</span>
 			</div>
 			<div class="feedback-body">
-				<form action="feedback.php" enctype="multipart/form-data" method="post">
-				
+				<form class="form" enctype="multipart/form-data" method="post">
+							<!-- Вывод сообщений с сервера -->
+				<div class="server-mes error-mes"></div>
+				<div class="server-mes success-mes"></div>
 					<div class="input-wrapper clearfix">
 						<!-- Имя -->
 						<div class="form-input-txt pull-left">
@@ -118,7 +123,7 @@
 						<!-- Почта -->
 						<div class="form-input-txt pull-right">
 							<label for="usermail" class="form-input-header">Email</label>
-							<input class="form-input" type="text" name="usermail" placeholder="Куда мне писать" id="usermail" qtip-content="Вы не ввели Email"/>
+							<input class="form-input" type="text" name="usermail" placeholder="Куда мне писать" id="usermail" qtip-position="right" qtip-content="Вы не ввели Email"/>
 						</div>
 					</div>
 		<!-- Описание проекта -->
@@ -134,7 +139,7 @@
             </div>
 				<div class="btn-wrap">
 						<button type="submit" class="s-button">Отправить</button>
-						<button type="submit" class="r-button">Очистить</button>
+						<button type="reset" class="r-button">Очистить</button>
 				</div>
 				</form>
 			</div>
@@ -166,5 +171,18 @@
 
 <!--Главный блок - end-->
 
+
+<!-- uplink plugins JS -->
+<script type="text/javascript" src="bower/q-tip2/jquery.min.js"></script>
+<script type="text/javascript" src="bower/q-tip2/jquery.qtip.js"></script>
+<script type="text/javascript" src="bower/bpopup/jquery.bpopup.js"></script>
+<script type="text/javascript" src="bower/js-placeholder/jquery.placeholder.js"></script>
+
+<!-- JS -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/add_project.js"></script>
 
 </body>
