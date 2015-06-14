@@ -39,7 +39,10 @@
 					<span class="logint-titul">Авторизируйтесь</span>
 			</div>
 			<div class="login-body">
-				<form action="login.php" enctype="multipart/form-data" method="post">
+				<form id="login" class="form" role="form" enctype="multipart/form-data" method="post">
+					    <!-- Вывод сообщений с сервера -->
+                        <div class="server-mes error-mes"></div>
+                        <div class="server-mes success-mes"></div>
 					<!-- Логин -->
 					<div class="form-input-txt">
 						<label for="userlogin" class="form-input-header">Логин</label>
@@ -74,7 +77,15 @@
 
 <!--Главный блок - end-->
 <!-- uplink plugins JS -->
-<script type="text/javascript" src="..bower/q-tip2/jquery.min.js"></script>
-<script type="text/javascript" src="..bower/q-tip2/jquery.qtip.js"></script>
+<script type="text/javascript" src="bower/q-tip2/jquery.min.js"></script>
+<script type="text/javascript" src="bower/q-tip2/jquery.qtip.js"></script>
+<script type="text/javascript" src="bower/bpopup/jquery.bpopup.js"></script>
+<script type="text/javascript" src="bower/js-placeholder/jquery.placeholder.js"></script>
+
+<!-- JS -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
